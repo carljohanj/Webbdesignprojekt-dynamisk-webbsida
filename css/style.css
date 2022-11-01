@@ -1,0 +1,1557 @@
+@font-face{
+    font-family: 'Cormorant Garamond';
+    src: url(../fonts/garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Grape Nuts';
+    src: url(../fonts/grapenuts/GrapeNuts-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Gloria Hallelujah';
+    src: url(../fonts/Gloria/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Over The Rainbow';
+    src: url(../fonts/overtherainbow/OvertheRainbow-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Meddon';
+    src: url(../fonts/Meddon/Meddon-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Vollkorn';
+    src: url(../fonts/Vollkorn/Vollkorn-Italic-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: 'Kalam';
+    src: url(../fonts/Kalam/Kalam-Light.ttf);
+}
+
+@font-face{
+    font-family: 'Bergamot';
+    src: url(../ornaments/Bergamot/BergamotOrnaments-3oK6.ttf);
+}
+
+
+
+/*  GENERELLA ELEMENT  */
+
+html{
+    font-size: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+body{
+    font-size: 1.3rem;
+    height: 100%;
+}
+
+
+
+/*  WRAPPER OCH BAKGRUNDSBILDER  */
+.wrapper{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+#index-wrapper{
+    background-image: url(../images/large/pexels-alexandra-kollstrem-8856563.jpg);
+}
+
+#menu-wrapper{
+    background-image: url(../images/large/44505798731_83d3f8f528_o.jpg);
+}
+
+#boat-wrapper{
+    background-image: url(../images/large/pexels-george-desipris-722995.jpg);
+}
+
+#booking-wrapper{
+    background-image: url(../images/large/negative-space-seared-scallops-in-pan.jpg);
+}
+
+#directions-wrapper{
+    background-image: url(../images/large/pexels-mihis-alex-21014.jpg);
+}
+
+.black-header, .black-header a:hover{
+    color: black;
+    font-weight: normal;
+}
+
+.white-header, .white-header a:hover{
+    color: white;
+    font-weight: normal;
+}
+
+#nav-startpage{
+    background-color: rgba(0, 0, 0, 0.281);
+    
+}
+
+#nav-menupage, #nav-menupage, #nav-directionspage a{
+    color: white;
+    text-shadow: 2px 1px black;
+}
+
+#index-headline{
+    text-shadow: 2px 1px black;
+}
+
+#nav-boatpage a{
+    color: black;
+}
+
+#nav-bookingpage a{
+    color: black;
+}
+
+a#currentpink{
+    color: #FA7677;
+}
+
+a#currentblue{
+    color: #095881;
+}
+
+a#currentyellow{
+    color: #EECBA1;
+}
+
+.hr-menu{
+    width: 50%;
+}
+
+
+
+/*  KNAPPAR OCH SEKTIONER  */
+
+section.part1{
+    height: 100%;
+}
+
+section.part2{
+    min-height: 100%;
+}
+
+section.part3{
+    min-height: 100%;
+}
+
+#start-button h2, #booking-button h2, #boat-button h2, #boat-button2 h2{
+    color: white;
+}
+
+#start-button{
+    background-color: #1d2937;
+}
+
+#menu-button h2{
+    color: black;
+}
+
+#menu-button{
+    background-color: #98B68B;
+}
+
+#index-page{
+    background-color: #485667;
+    color: white;
+}
+
+#index-page p{
+    line-height: 1.35rem;
+    letter-spacing: 1.6pt;
+}
+
+#index-page p#centered{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#boat-button2{
+    background-color: #095881;
+}
+
+#booking-button{
+    /*
+    background-color: #FA7677;
+    */
+    background-color: #1d2937;
+}
+
+.top{
+    cursor: pointer;
+}
+
+
+
+/*  NAVIGERING OCH HEADERS  */
+
+header{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+    padding-top: 1rem;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight:500;
+    font-family: 'Vollkorn';
+}
+
+header p{
+    font-size: 1rem;
+    font-variant: all-small-caps;
+}
+
+header.black-header img, header.white-header img{
+    width: 90px;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 1rem;
+    margin-left: -13rem;
+}
+
+nav{
+    max-width: 100%;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+nav a{
+    font-family: 'Grape Nuts', cursive;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+/*  KNAPPAR OCH SEKTIONER  */
+
+.textbox{
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-variant: all-small-caps;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.281);
+    letter-spacing: 2.8pt;
+    display: block;
+    width: 50%;
+    margin: auto;
+}   
+
+
+.textbox a{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.button{
+    background-color: #485667;
+    box-sizing: border-box;
+    width:fit-content;
+    height:fit-content;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    align-content: center;
+    position: absolute;
+    bottom: 3rem;
+    right: 10rem;
+    cursor: pointer;
+}
+
+.button h2{
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+.button2{
+    background-color: #485667;
+    box-sizing: border-box;
+    width:fit-content;
+    height:fit-content;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    align-content: center;
+    position: absolute;
+    bottom: 3rem;
+    right: 10rem;
+    cursor: pointer;
+}
+
+.button2 h2{
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+#boat-button{
+    background-color: #095881;
+    margin-right: 12.5rem;
+}
+
+section.part3 h2, section.part2 h2{
+    font-family: 'Cormorant Garamond';
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: all-small-caps;
+    margin-left: 15rem;
+    padding-top: 2rem;
+    letter-spacing: 2pt;
+}
+
+section.part3 h3{
+    font-family: 'Cormorant Garamond';
+    font-size: 1rem;
+    font-weight: bold;
+    font-variant: all-small-caps;
+    margin-left: 15rem;
+    padding-top: 2rem;
+    letter-spacing: 2pt;
+}
+
+section.part3 p{
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-weight: 500;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding-top: 2rem;
+    letter-spacing: 2pt;
+    word-spacing: 0.1rem;
+    max-width: 50rem;
+}
+
+
+#menu-page{
+    background-color: hsl(102, 23%, 63%);
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#boat-page2{
+    background-color: #095881;
+    color: white;
+    display: block;
+    justify-content: center;
+}
+
+#boat-page3{
+    background-color: #088377;
+    color: white;
+}
+
+
+#boat-page2 p{
+    line-height: 1.35rem;
+    letter-spacing: 1.6pt;
+}
+
+
+#booking-page{
+    background-color: #EECBA1;
+    color: black;
+    width: 100%;
+}
+
+#directions-page{
+    background-color: #8aa88e;
+    color: black;
+}
+
+
+
+section.part2 p{
+    font-size: 1.2rem;
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-weight: 500;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    padding-top: 2rem;
+    letter-spacing: 2pt;
+    word-spacing: 0.1rem;
+}
+
+section.part2 hr{
+    width: 15rem;
+}
+
+.boat p{
+    color: white;
+}
+
+.fishing-subsection{
+    display: inline-block;
+    width: 45%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 0rem;
+}
+
+.fishing-subsection p{
+    font-weight: 600;
+}
+
+
+/*  SÖKFÄLT och BILDER  */
+
+#search-area{
+    margin-left: 15rem;
+    padding-top: 3rem;
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-size: 2rem;
+}
+
+input{
+    height: 2rem;
+    width: 15rem;
+    border: none;
+    outline: none;
+}
+
+button[type=submit]{
+    height: 2.2rem;
+    width: 6rem;
+    margin-left: 1rem;
+
+}
+
+button[type=submit]:hover{
+    background-color: #63758c;
+    border: none;
+}
+
+img{
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.picture_left{
+    float: left;
+}
+
+.picture-right{
+    float: right;
+    padding-bottom: 0.6rem;
+}
+
+
+/*  FORMULÄR  */
+
+form{
+    padding-top: 5rem;
+    width: 33rem;
+    display: block;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.form-style-3{
+	max-width: 100%;
+	font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+}
+
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
+}
+
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.form-style-3 fieldset{
+
+	border: 1px solid #000000;
+	padding: 20px;
+	background: #ffffff;
+}
+
+.form-style-3 fieldset legend{
+	color: #000000;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	background: #ffffff;
+	font-weight: normal;
+	font-size: 1rem;
+    font-variant: all-small-caps;
+    letter-spacing: 2pt;
+}
+
+.form-style-3 textarea{
+	width: 17rem;
+	height: 8rem;
+}
+
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 input[list=dates],
+.form-style-3 input[list=persons],
+.form-style-3 select{
+
+	outline: none;
+    color: white;
+    background-color: #63758c;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	width:50%;
+}
+
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #63758c;
+	color: #ffffff;
+    margin-left: 6.2rem;
+    width: 8rem;
+}
+
+input[type="radio"]
+{
+    height: 1rem;
+}
+
+#booking-page ul{
+    display: flex;
+    margin-right: auto;
+    max-width: 20rem;
+}
+
+#booking-page li{
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+}
+
+#booking-page li label{
+    padding-left: 5rem;
+}
+
+/*  TABELLER  */
+
+.menu-subsection{
+    display: inline-block;
+    width: 45%;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding-right: 0rem;
+}
+
+.menu-subsection h2{
+    font-family: 'Cormorant Garamond';
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#table-menu{
+    width: 100%;
+    padding: 1rem;
+}
+
+#table-menu th{
+    font-family: 'Cormorant Garamond';
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2pt;
+    text-align: center;
+    background: white;
+    padding: 1rem;
+}
+
+#table-menu tr{
+    max-width: 50%;
+}
+
+#table-menu td{
+    max-width: inherit;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    font-family: 'Kalam';
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#table-menu .price{
+    font-family: 'Cormorant Garamond';
+}
+
+#ornament, #ornament2, #ornament3{
+    font-family: Bergamot;
+    font-size: 2rem;
+}
+
+
+
+/*  FOOD-WIDGET FÖR JAVASCRIPT-API  */
+
+#food-widget{
+    margin-left: 15rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#food-widget table{
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond';
+    font-weight: 500;
+    margin-right: 15rem;
+    letter-spacing: 2pt;
+    word-spacing: 0.1rem;
+    max-width: 50rem;
+    line-height: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#food-widget thead{
+    text-align: center;
+}
+
+#food-widget tbody{
+    padding-bottom: 2rem;
+}
+
+#food-widget table tr{
+    display: flex;
+    justify-content: space-around;
+}
+
+#food-widget table td{
+    text-align: center;
+}
+
+#food-widget table h3{
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+    padding-top: 0rem;
+    text-align: center;
+}
+
+#food-widget table td h3{
+    margin-left: 0rem;
+}
+
+#food-widget p{
+    font-family: 'Cormorant Garamond';
+    font-variant: normal;
+    font-size:small;
+    padding-top: 0rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-right: 6rem;
+    line-height: normal;
+    text-align: left;
+}
+
+#food-widget iframe{
+    margin-top: 2rem;
+}
+
+#food-widget table tr td img{
+    padding-top: 0rem;
+    max-width: 450px;
+    float: right;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+}
+
+/*  FOOTER  */
+
+footer{   
+    background-color: #1d2937;
+    height:7rem;
+}
+
+footer p{
+    color: white;
+    font-style: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-variant-numeric: oldstyle-nums;
+    font-size: 1rem;
+}
+
+footer a:link{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: white;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%; 
+}
+
+/*  KART-API  */
+
+#directions-page{
+    display: block;
+    justify-content: center;
+}
+
+#directions-page h2{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0rem;
+}
+
+.map {
+    padding-top: 5rem;
+    height: 400px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/*  DROWNDOWN-MENY FÖR SMÅ SKÄRMAR  */
+
+.dropdown-button{
+    background-color: #1d2937;
+    box-sizing: border-box;
+    width:fit-content;
+    height:fit-content;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-left: 2rem;
+    align-content: center;
+    cursor: pointer;
+}
+
+.dropdown-button h2{
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid white;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+
+.dropdown-content {
+    margin-left: 2rem;
+    display: none;
+    position: absolute;
+    background-color: #63758c;
+    width: 8.88rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #1d2937;
+    text-align: center;
+  }
+
+  .dropdown-content h2{
+    font-family: 'Cormorant Garamond';
+    font-variant: all-small-caps;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+
+
+  .dropdown-content:active {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .menu-hr{
+      width: 60%;
+  }
+
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+
+
+  
+
+
+
+  /*    BRYTPUNKT 1160 PIXLAR*/
+
+  @media (max-width: 1160px)
+  {
+    nav{
+        max-width: 100%;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    section.part3 h2, section.part2 h2{
+        font-family: 'Cormorant Garamond';
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-variant: all-small-caps;
+        margin-left: 5rem;
+        padding-top: 2rem;
+        letter-spacing: 2pt;
+    }
+    
+    section.part3 h3{
+        font-family: 'Cormorant Garamond';
+        font-size: 1rem;
+        font-weight: bold;
+        font-variant: all-small-caps;
+        margin-left: 5rem;
+        padding-top: 2rem;
+        letter-spacing: 2pt;
+    }
+    
+    section.part3 p{
+        font-size: 1.2rem;
+        font-family: 'Cormorant Garamond';
+        font-variant: all-small-caps;
+        font-weight: 500;
+        margin-left: 5rem;
+        padding-top: 2rem;
+        letter-spacing: 2pt;
+        word-spacing: 0.1rem;
+        max-width: 40rem;
+    }
+
+    .button{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        bottom: 3rem;
+        right: 6rem;
+    }
+    
+    .button2{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        bottom: 3rem;
+        right: 6rem;
+    }
+
+    input{
+        height: 2rem;
+        width: 15rem;
+        border: none;
+        outline: none;
+    }
+    
+    button[type=submit]{
+        height: 2.2rem;
+        width: 6rem;
+        margin-left: 1rem;
+    
+    }
+
+    #table-menu{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    #table-menu th{
+        font-family: 'Cormorant Garamond';
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 2pt;
+        text-align: center;
+        background: white;
+        padding: 1rem;
+    }
+    
+    #table-menu tr{
+        max-width: 50%;
+    }
+    
+    #table-menu td{
+        max-width: inherit;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.75rem;
+        font-family: 'Kalam';
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    #table-menu .price{
+        font-family: 'Cormorant Garamond';
+    }
+    
+    #ornament, #ornament2, #ornament3{
+        font-family: Bergamot;
+        font-size: 2rem;
+    }
+    
+    
+    
+    /*  FOOD-WIDGET FÖR JAVASCRIPT-API  */
+    
+    #food-widget{
+        margin-left: 5rem;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    #food-widget table{
+        font-size: 1rem;
+        font-family: 'Cormorant Garamond';
+        
+        font-weight: 500;
+        letter-spacing: 2pt;
+        word-spacing: 0.1rem;
+        align-items: left;
+        max-width: 40rem;
+        line-height: 1.5rem;
+        margin-bottom: 4rem;
+        margin-left: -2rem;
+    }
+    
+    #food-widget thead{
+        text-align: center;
+    }
+    
+    #food-widget tbody{
+        padding-bottom: 2rem;
+    }
+    
+    #food-widget table tr{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #food-widget table td{
+        text-align: center;
+        padding-left: 1rem;
+    }
+    
+    #food-widget table h3{
+        margin-left: 0rem;
+        margin-bottom: 1.5rem;
+        padding-top: 0rem;
+        text-align: center;
+    }
+    
+    #food-widget table td h3{
+        margin-left: 0rem;
+    }
+    
+    #food-widget p{
+        font-family: 'Cormorant Garamond';
+        font-variant: normal;
+        font-size:small;
+        padding-top: 0rem;
+        padding-bottom: 0.5rem;
+        text-align: left;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-right: 6rem;
+        line-height: normal;
+        text-align: left;
+    }
+    
+    #food-widget iframe{
+        margin-top: 2rem;
+    }
+    
+    #food-widget img{
+        padding-top: 0rem;
+        width: 450px;
+        float: right;
+        padding-right: 0rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    #search-area{
+        margin-left: 3rem;
+    }
+
+    .menu-subsection{
+        width: 60%;
+    }
+
+
+}
+
+
+
+
+
+
+
+  /*    BRYTPUNKT: 800 PIXLAR   */
+
+@media (max-width: 800px)
+{
+    nav{
+        max-width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    header.black-header, header.white-header{
+        width: 70%;
+        justify-content: center;
+    }
+
+    header.black-header img, header.white-header img{
+        width: 90px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-right: 1rem;
+
+    }
+
+    .textbox{
+        display: block;
+        width: 75%;
+        margin: auto;
+    }
+
+    section.part2 p{
+        font-size: 1.2rem;
+        font-family: 'Cormorant Garamond';
+        font-variant: all-small-caps;
+        font-weight: 500;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-top: 2rem;
+        letter-spacing: 2pt;
+        word-spacing: 0.1rem;
+    }
+
+    .button, .button2{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        bottom: 3rem;
+        right: 4rem;
+    }
+
+    .button{
+        margin-left: 1rem;
+    }
+
+    .button h2, .button2 h2{
+        font-size: 1.1rem;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #boat-button{
+        margin-right: 11rem;
+    }
+
+    #food-widget{
+        margin-left: 2rem;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    section.part3 h3, section.part3 h2{
+        margin-left: 3rem;
+    }
+    
+    section.part3 p{
+        margin-left: 3rem;
+        padding-top: 2rem;
+        letter-spacing: 2pt;
+        word-spacing: 0.1rem;
+        max-width: 40rem;
+    }
+
+    .menu-subsection{
+        display: inline-block;
+        width: 70%;
+    }
+}
+
+
+
+
+/*  BRYTPUNKT 600 PIXLAR  */
+
+@media(max-width: 600px)
+{
+
+    #food-widget table tr td img{
+        padding-top: 0rem;
+        max-width: 300px;
+        float: right;
+        padding-right: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    .button, .button2{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: rem;
+        margin-left: 1rem;
+        bottom: 1rem;
+        right: 3rem;
+    }
+
+    .button{
+        margin-left: 0.5rem;
+    }
+
+    .button h2, .button2 h2{
+        font-size: 1.1rem;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    section.part3 p{
+        font-size: 1.2rem;
+        font-family: 'Cormorant Garamond';
+        font-variant: all-small-caps;
+        font-weight: 500;
+        display: block;
+        width: 75%;
+        margin: auto;
+        margin-left: 3rem;
+    }
+
+    .textbox{
+        display: block;
+        width: 75%;
+        margin: auto;
+        font-size: 0.9rem;
+    }
+
+    .menu-subsection{
+        display: inline-block;
+        width: 85%;
+    }
+
+    .picture_left{
+        float: left;
+    }
+    
+    .picture-right{
+        float: right; 
+    }
+
+
+    /*  FORMULÄR  */
+
+    form{
+        width: 80%;
+        padding-right: 1rem;
+    }
+    
+    .form-style-3{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .form-style-3 label{
+        display:block;
+        margin-bottom: 10px;
+    }
+    
+    .form-style-3 label > span{
+        float: left;
+        width: 100px;
+        color: black;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .form-style-3 fieldset{
+    
+        border: 1px solid #000000;
+        padding: 20px;
+        background: #ffffff;
+        width: 95%;
+        display: inline-block;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+    
+    .form-style-3 textarea{
+        width: 85%;
+        height: 8rem;
+    }
+    
+    .form-style-3 input[type=text],
+    .form-style-3 input[type=date],
+    .form-style-3 input[type=datetime],
+    .form-style-3 input[type=number],
+    .form-style-3 input[type=search],
+    .form-style-3 input[type=time],
+    .form-style-3 input[type=url],
+    .form-style-3 input[type=email],
+    .form-style-3 input[list=dates],
+    .form-style-3 input[list=persons],
+    .form-style-3 select{
+    
+        outline: none;
+        color: white;
+        background-color: #63758c;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        width: 80%;
+    }
+    
+        
+    #booking-page ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #booking-page li{
+        font-family: 'Cormorant Garamond';
+        font-variant: all-small-caps;
+        text-align: center;
+    }
+    
+    #booking-page li label{
+        padding-left: 0rem;
+    }
+}
+
+
+
+/*  BRYTPUNKT 560 PIXLAR*/
+
+@media(max-width: 560px)
+{
+
+    #boat-button{
+        margin-right: 9rem;
+    }
+
+    #boat-button2{
+        margin-right: -2rem;
+    }
+
+    nav{
+        max-width: 100%;
+    }
+
+    nav a{
+        font-size: 1.3rem;
+    }
+
+    header.black-header, header.white-header{
+        width: 60%;
+        justify-content: center;
+    }
+
+    header.black-header img, header.white-header img{
+        width: 90px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-right: 1rem;
+    }    
+
+
+    #food-widget img{
+        text-align: center;
+        padding-left: 0rem;
+    }
+}
+
+
+
+/*  BRYTPUNKT 510 PIXLAR*/
+
+@media(max-width: 510px)
+{
+    header h1{
+        font-size: 2rem;
+    }
+
+    header.black-header, header.white-header{
+        margin-left: 1rem;
+    }
+
+    header.black-header img, header.white-header img{
+        width: 70px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        margin: auto;
+    }    
+
+    #table-menu td{
+        font-family: 'Kalam';
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .picture_left{
+        display: none;
+    }
+    
+    #index-page p, #boat-page2 p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .form-style-3 fieldset{
+    
+        border: 1px solid #000000;
+        padding: 20px;
+        background: #ffffff;
+        width: 95%;
+        display: inline-block;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    
+    .form-style-3 textarea{
+        width: 90%;
+        height: 8rem;
+    }
+    
+    .form-style-3 input[type=text],
+    .form-style-3 input[type=date],
+    .form-style-3 input[type=datetime],
+    .form-style-3 input[type=number],
+    .form-style-3 input[type=search],
+    .form-style-3 input[type=time],
+    .form-style-3 input[type=url],
+    .form-style-3 input[type=email],
+    .form-style-3 input[list=dates],
+    .form-style-3 input[list=persons],
+    .form-style-3 select{
+    
+        outline: none;
+        color: white;
+        background-color: #63758c;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        width: 80%;
+    }
+
+    
+    .form-style-3 input[type=submit],
+    .form-style-3 input[type=button]{
+	background: #63758c;
+	color: #ffffff;
+    margin-left: 0rem;
+    width: fit-content;
+    }
+
+    form{
+        padding-right: 1.75rem;
+    }
+
+    
+    .textbox{
+        display: block;
+        width: 75%;
+        margin: auto;
+        font-size: 0.9rem;
+    }
+
+    #boat-page2 p{
+        margin-left: 2rem;
+    }
+
+    #index-page p{
+        margin-left: 2rem;
+    }
+
+}
+
+
+
+
+@media(max-width: 480)
+{
+
+.picture_left{
+       margin-right: 0rem;
+   }
+
+.picture-right{
+       width: 75%;
+       margin-left: 0rem;
+   }
+
+#food-widget{
+    max-width: 100%;
+    max-height: auto;
+    padding-bottom: 2rem;
+}
+
+#food-widget table{
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond';
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: 2pt;
+    word-spacing: 0.1rem;
+    align-items: center;
+    line-height: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#food-widget tbody{
+    padding-bottom: 2rem;
+}
+
+#food-widget table tr{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#food-widget table td{
+    text-align: center;
+    margin: auto;
+}
+
+
+#food-widget table td h3{
+    margin: auto;
+}
+
+#food-widget p{
+    width: auto;
+    line-height: normal;
+    text-align: left;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+#food-widget img.resize{
+    width: 300px;
+}
+
+}

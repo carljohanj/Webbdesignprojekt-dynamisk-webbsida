@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Boka bord på restaurangen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href ="../css/style.css">
+    <link href="../images/favicons/favicon.ico" rel="icon">
+    <script src ="../js/bokabord.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="wrapper" id="booking-wrapper">
+      <a href="../index.html">
+        <header class="black-header">
+          <img src="../images/illustrations/shrimp_pink.png" alt="Bild på en nöjd räka" class="shrimp" id="image-on"><h1>Den Glada Räkan</h1>
+        </header>
+    </a>
+  
+    <nav id="nav-bookingpage">
+      <ul>
+        <li><a href="../html/menyochnyfiskat.html">Meny</a></li>
+        <li><a href="../html/fartyget.html">Fiskebåten</a></li>
+        <li><a href="../html/bokabord.html" id="currentyellow">Bokningar</a></li>
+        <li><a href="../html/hittahit.html">Hitta hit</a></li>
+      </ul>
+    </nav>
+
+    <section class="part1">
+      <div class="dropdown">
+        <div class="dropdown-button"><h2>Navigering <span class="arrow down"></span></h2></div>
+          <div class="dropdown-content">
+            <a href="menyochnyfiskat.html"><h2>Meny</h2></a>
+            <hr class="menu-hr">
+            <a href="fartyget.html"><h2>Fiskebåten</h2></a>
+            <hr class="menu-hr">
+            <a href="bokabord.html"><h2>Bokningar</h2></a>
+            <hr class="menu-hr">
+            <a href="hittahit.html"><h2>Hitta hit</h2></a>
+          </div>
+      </div>
+      <br><br>
+
+      <p class="textbox">Har du särskilda frågor om meny, väder eller leveranser? Ring <a href="tel:070-5416534">070-5416534</a></p>
+
+      <div class="button" id="booking-button">
+        <h2>Boka hos oss</h2>
+      </div>
+    </section>
+    </div>
+
+    <section class="part2" id="booking-page">     
+
+      <div class="form-style-3">
+        <form>
+          <!--
+          <ul>
+            <li><input type="radio" id="bord" value="bord"><label>Boka bord</label>
+            </li>
+            <li><input type="radio" id="skepp" value="skepp"><label>Boka fisketur</label></li>
+          </ul>
+          -->
+           <br><br>
+        <fieldset><legend>Bokningsuppgifter</legend>
+        <label for="field1"><span>Namn</span><input type="text" class="input-field" name="field1" value="" id="field1"></label>
+        <label for="field2"><span>Email </span><input type="email" class="input-field" name="field2" value="" id="field2"></label>
+        <label for="field3"><span>Nummer </span><input type="text" class="input-field" name="field3" value="" id="field3"></label>
+        <label for="field4"><span>Välj datum</span><input list="dates" id = "field4">
+          <datalist id="dates">
+            <option value="4 Juni">
+            <option value="5 Juni">
+            <option value="6 Juni">
+            <option value="7 Juni">
+            <option value="8 Juni">
+            <option value="9 Juni">
+            <option value="10 Juni">
+            <option value="11 Juni">
+            <option value="12 Juni">
+            </datalist>
+        </label>
+        <label for="field5"><span>Välj antal personer</span><input list="persons" id="field5">
+        <datalist id="persons">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+        </datalist>
+        </label>
+        </fieldset>
+
+        <br>
+        
+        <fieldset><legend>Övrigt</legend>
+        <label for="field6"><span>(Allergier och liknande) </span><textarea name="field6" class="textarea-field" id="field6"></textarea></label>
+        <label><input type="submit" value="Skicka bokning"></label>
+        </fieldset>
+
+      </form>
+      </div>
+
+       
+        
+
+    </section>
+
+    <footer>
+      <ul>
+        <li><p>Norra Hamngatan 22, Visby</p></li>
+        <li><p>070 - 541 65 34</p></li>
+      </ul>
+    </footer>
+  </body>
+</html>

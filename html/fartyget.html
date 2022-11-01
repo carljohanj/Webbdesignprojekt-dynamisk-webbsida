@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Om fiskebåten</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href ="../css/style.css">
+    <link href="../images/favicons/favicon.ico" rel="icon">
+    <script src ="../js/fartyg.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="wrapper" id="boat-wrapper">
+      <a href="../index.html">
+        <header class="black-header">
+          <img src="../images/illustrations/shrimp_pink.png" alt="Bild på en nöjd räka" class="shrimp" id="image-on"><h1>Den Glada Räkan</h1>
+        </header>
+      </a>
+    <nav id="nav-boatpage">
+      <ul>
+        <li><a href="../html/menyochnyfiskat.html">Meny</a></li>
+        <li><a href="../html/fartyget.html" id="currentblue">Fiskebåten</a></li>
+        <li><a href="../html/bokabord.html">Bokningar</a></li>
+        <li><a href="../html/hittahit.html">Hitta hit</a></li>
+      </ul>
+    </nav>
+
+    <section class="part1">
+      <div class="dropdown">
+        <div class="dropdown-button"><h2>Navigering <span class="arrow down"></span></h2></div>
+          <div class="dropdown-content">
+            <a href="menyochnyfiskat.html"><h2>Meny</h2></a>
+            <hr class="menu-hr">
+            <a href="fartyget.html"><h2>Fiskebåten</h2></a>
+            <hr class="menu-hr">
+            <a href="bokabord.html"><h2>Bokningar</h2></a>
+            <hr class="menu-hr">
+            <a href="hittahit.html"><h2>Hitta hit</h2></a>
+          </div>
+      </div>
+      
+      <div class="button" id="boat-button">
+        <h2>Om Skeppet</h2>
+      </div>
+      <a href="#boat-page3">
+      <div class="button2" id="boat-button2">
+        <h2>Matinspiration</h2>
+      </div>
+      </a>
+    </section>
+  </div>
+
+    <section class="part2" id="boat-page2">
+      <picture class="picture_left">
+        <source media="(min-width:1200px)" srcset="../images/large/pexels-mathias-reding-12069405.jpg">
+        <source media="(min-width:1050px)" srcset="../images/midsized/pexels-mathias-reding-mid.jpg">
+        <source media="(min-width:850px)" srcset="../images/midsized/pexels-mathias-reding-250.jpg">
+        <source media="(min-width:600px)" srcset="../images/small/pexels-mathias-reding-small.jpg">
+        <source media="(min-width:200px)" srcset="../images/small/pexels-mathias-reding-tiny.jpg">
+        <img src="../images/large/pexels-mathias-reding-12069405.jpg" alt="Hytten står redo" style="width:auto;">
+      </picture>
+      
+      <picture class="picture-right">
+        <source media="(min-width:1200px)" srcset="../images/large/pexels-sea-twilight-561463.jpg">
+        <source media="(min-width:1050px)" srcset="../images/midsized/pexels-sea-twilight-mid.jpg">
+        <source media="(min-width:850px)" srcset="../images/midsized/pexels-sea-twilight-250.jpg">
+        <source media="(min-width:600px)" srcset="../images/small/pexels-sea-twilight-small.jpg">
+        <source media="(min-width:200px)" srcset="../images/small/pexels-sea-twilight-tiny.jpg">
+        <img src="../images/midsized/pexels-sea-twilight-mid.jpg" alt="Skymningsljus på havet" style="width:auto;">
+      </picture>
+    
+      <p class="boat">Den glada räkan är en liten men mysig fiskebåt som ofta färdas långa sträckor för att utforska Östersjöns djup.
+
+        <br><br>
+        
+        Bokade fisketurer brukar hålla sig i bukten kring innerstan medan kommersiellt fiske sker ute på djupt blått hav.
+        
+        <br><br>
+        
+        Båten har varit i drift i snart 15 år och följer de standarder och säkerhetsföreskrifter som Sjöfartsverket definierat. Säkerheten är viktig för oss – både våra kunders och våra mer erfarna fiskares.
+        
+        <br><br>
+        
+        Vi är medvetna om att överfiske är ett stort problem för industrin och har förpliktigat oss att aldrig dra upp fisk och skaldjur med skyddade eller känsliga bestånd. Vi samarbetar även tillsammans med Pure Ocean Fund och Plastic Oceans för att minska nedsmutsningen från fiskeindustrin. Du kan läsa mer om initiativen på deras respektive webbsidor.
+        
+        <br><br>
+        
+        Den del av fångsten som vi inte lagar till och själva säljer på vår restaurang skickas ut till lokala fiskhandlare och butiker. Håll utkik efter vår räkmärkning i alla välsorterade affärer!<br><br></p>
+    </section>
+    <section class="part3" id="boat-page3">
+      <h2>Receptdatabasen</h2>
+      <p>Osäker på vad du ska göra med fångsten? Testa att använda vårt API för att söka efter recepttips för fisken!</p>
+      <div id="search-area">
+        <input type="text" placeholder="Sök... " id="search-field"><button type="submit" id="search-button">Sök</button>
+      </div>
+      <div id="food-widget"></div>
+    </section>
+
+    <footer>
+      <ul>
+        <li><p>Norra Hamngatan 22, Visby</p></li>
+        <li><p>070 - 541 65 34</p></li>
+      </ul>
+    </footer>
+  </body>
+</html>

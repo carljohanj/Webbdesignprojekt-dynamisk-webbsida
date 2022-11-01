@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Hitta till oss</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href ="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
+    <link href="../images/favicons/favicon.ico" rel="icon">
+    <script src ="../js/hittahit.js" type="module"></script>
+  </head>
+    
+  <body>
+    <div class="wrapper" id="directions-wrapper">
+        <a href="../index.html">
+      <header class="white-header">
+        <img src="../images/illustrations/shrimp_pink.png" alt="Bild på en nöjd räka" class="shrimp"><h1>Den Glada Räkan</h1>
+      </header>
+        </a>
+    <nav id="nav-directionspage">
+      <ul>
+        <li><a href="menyochnyfiskat.html">Meny</a></li>
+        <li><a href="fartyget.html">Fiskebåten</a></li>
+        <li><a href="bokabord.html">Boka bord</a></li>
+        <li><a href="hittahit.html">Hitta hit</a></li>
+      </ul>
+    </nav>
+
+    <section class="part1">
+      <div class="dropdown">
+        <div class="dropdown-button"><h2>Navigering <span class="arrow down"></span></h2></div>
+          <div class="dropdown-content">
+            <a href="menyochnyfiskat.html"><h2>Meny</h2></a>
+            <hr class="menu-hr">
+            <a href="fartyget.html"><h2>Fiskebåten</h2></a>
+            <hr class="menu-hr">
+            <a href="bokabord.html"><h2>Bokningar</h2></a>
+            <hr class="menu-hr">
+            <a href="hittahit.html"><h2>Hitta hit</h2></a>
+          </div>
+      </div>
+      <br><br>  
+      
+      <p class="textbox">Vi finns i Visby på Gotland, beläget i Östersjöns djupblåa centrum. Använd gärna vårt kart-API nedan för att leta upp oss om du har vägarna förbi!
+        </p>
+
+
+      <div class="button" id="start-button">
+        <h2>Hitta hit</h2>
+      </div>
+
+    </section>
+  </div>
+    <section class="part2" id="directions-page">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+        <div id="map" class="map"></div>
+        <script type="text/javascript">
+        var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([18.285974258727943, 57.63841705762788]),
+          zoom: 12
+        })
+        });
+        </script>
+        <h2>Norra Hamngatan 22, Visby, Gotland</h2>
+    </section>
+    <footer>
+      <ul>
+        <li><p>Norra Hamngatan 22, Visby</p></li>
+        <li><p>070 - 541 65 34</p></li>
+      </ul>
+    </footer>
+  </body>
+</html>
